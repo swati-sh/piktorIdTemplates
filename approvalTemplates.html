@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <style type="text/css">
+      #btn {
+        width: 211px;
+        padding: 12px;
+        border: none;
+        outline: none;
+        background-color: #0463f7;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      @media only screen and (max-width: 425px) {
+        #templateDiv {
+          max-width: 80% !important;
+        }
+      }
+    </style>
+    <title>Approval Request</title>
+  </head>
+  <body style="font-family: Arial; margin: 0;">
+    <div
+      style="max-width: 50%; margin: 0 auto; padding: 20px 20px 20px 20px; background-color: #fff;"
+      id="templateDiv"
+    >
+      <table style="width: 100%;">
+        <tr>
+          <td style="padding: 20px 0px 0px 0px;">
+            <img src="./assets/Page-1_1_.svg" />
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 25px 0;">
+            <span style="color: #000; font-weight: bold">Dear Shilpy,</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span style="color: #000; font-weight: bold"
+              >Pending for Approval</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 5px 0 25px 0;">Submitted: ${date}</td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 25px;">
+            <span style="color: #000; font-weight: bold">${employeeName}</span>
+            has been completed the onboarding process and submitted the details
+            for a approval, please click below to verify the details and
+            approve/reject.
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 5px 0;">
+            <a href="#"><button id="btn">verify details</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td style="color: #000; opacity:0.3; font-size: 14px;">
+            On click of “Verify Details” you will be navigate to GOTAG
+            Application.
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 40px 0;">
+            This is an automated e-mail. Please do not send any reply to this
+            e-mail id.
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
